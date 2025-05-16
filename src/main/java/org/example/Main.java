@@ -3,15 +3,16 @@ import java.util.Scanner;
 public class Main {
      public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int menu;
         System.out.print("Choose which of the following code to run: \n 1. Further Substring fun \n 2. Run of integers \n 3. Sum of a range of sequential integers \n 4. Repeatedly echo a word \n 5. Words separated by dots \n 6. Adding up integers \n 7. Shipping cost calculator ");
         menu = input.nextInt();
-        if (menu == 1) {
-            String sentence;
+       if (menu == 1) {
+       String sentence;
        int start;
        int end;
        System.out.print("Enter a string:") ;
-       sentence = input.nextLine() ;
+       sentence = scanner.nextLine() ;
        System.out.print("Enter beginning index: ");
        start = input.nextInt() ;
        System.out.print("Enter ending index: ");
@@ -22,7 +23,7 @@ public class Main {
        sentence = sentence.substring(start,end);
        System.out.println(sentence);
 
-        }
+       }
         if (menu == 2) {
        int start;
        int end;
@@ -56,7 +57,7 @@ public class Main {
        String word;
        int length;
        System.out.println("Enter a word:");
-       word = input.nextLine();
+       word = scanner.nextLine();
        length = word.length();
        for (int i = 0; i<length; i++) {
            System.out.println(word);
@@ -65,11 +66,11 @@ public class Main {
     }
     if (menu == 5) {
         System.out.println("Enter first word:");
-        String word1 = input.nextLine();
+        String word1 = scanner.nextLine();
 
 
         System.out.println("Enter second word:");
-        String word2 = input.nextLine();
+        String word2 = scanner.nextLine();
 
 
         int totalLength = 30;
