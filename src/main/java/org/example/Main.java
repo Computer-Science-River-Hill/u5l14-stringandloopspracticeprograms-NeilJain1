@@ -99,7 +99,6 @@ public class Main {
         for (int i =0; i<numberOfInt; i++){
             System.out.println("Enter an integer:");
             currentInt = input.nextInt();
-            System.out.print(currentInt);
             sum = sum + currentInt;
         }
         System.out.print("The sum is " + sum);
